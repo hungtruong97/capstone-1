@@ -7,6 +7,8 @@
   --light-purple: #f9f8fd;
   --purple: rgba(147, 107, 232, 0.05);
   --red: #ef4f44;
+  --light-grey: #dadbdd;
+  --grey: #4f4e4e;
 }
 
 * {
@@ -22,45 +24,78 @@ body {
 
 header {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
   z-index: 10;
+  position: fixed;
 }
 
-.carousel-item {
+.header__content {
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: white;
+}
+
+.header__content .nav-link {
+  position: relative;
+  color: var(--black);
+}
+
+.header__content .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0px;
+  height: 1px;
+  background-color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.header__content .nav-link:hover {
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.header__content .nav-link:hover::before {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.header-carousel .carousel-item {
   position: relative;
 }
 
-.carousel-item .carousel__content {
+.header-carousel .carousel-item .carousel__content {
   position: absolute;
 }
 
-.carousel-item .carousel__content h1 {
+.header-carousel .carousel-item .carousel__content h1 {
   font-size: 66px;
 }
 
-.carousel-item .carousel__content .btn {
+.header-carousel .carousel-item .carousel__content .btn {
   border-radius: 10px;
   padding: 15px 50px;
   background-color: var(--white);
   color: var(--primary-color);
 }
 
-.carousel-item .carousel__content .btn-outline-primary {
+.header-carousel .carousel-item .carousel__content .btn-outline-primary {
   border-color: var(--white);
   color: var(--white);
   background-color: transparent;
   transition: all 0.5s;
 }
 
-.carousel-item .carousel__content .btn-outline-primary:hover {
+.header-carousel .carousel-item .carousel__content .btn-outline-primary:hover {
   color: var(--primary-color);
   background-color: var(--white);
   transition: all 0.5s;
 }
 
-.carousel-item::before {
+.header-carousel .carousel-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -71,7 +106,7 @@ header {
   opacity: 0.4;
 }
 
-.carousel-item-1 {
+.header-carousel .carousel-item-1 {
   background-image: url(/assets/img/Homepage/banner1.jpeg);
   background-size: cover;
   width: 100%;
@@ -79,7 +114,7 @@ header {
   height: 95vh;
 }
 
-.carousel-item-2 {
+.header-carousel .carousel-item-2 {
   background-image: url(/assets/img/Homepage/banner2.jpeg);
   background-size: cover;
   width: 100%;
@@ -87,7 +122,7 @@ header {
   height: 95vh;
 }
 
-.carousel-item-3 {
+.header-carousel .carousel-item-3 {
   background-image: url(/assets/img/Homepage/banner3.jpeg);
   background-size: cover;
   width: 100%;
@@ -95,7 +130,7 @@ header {
   height: 95vh;
 }
 
-.carousel-item-4 {
+.header-carousel .carousel-item-4 {
   background-image: url(/assets/img/Homepage/banner4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -103,15 +138,15 @@ header {
   height: 95vh;
 }
 
-.carousel-item-1 .carousel__content,
-.carousel-item-3 .carousel__content {
+.header-carousel .carousel-item-1 .carousel__content,
+.header-carousel .carousel-item-3 .carousel__content {
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
 }
 
-.carousel-item-2 .carousel__content,
-.carousel-item-4 .carousel__content {
+.header-carousel .carousel-item-2 .carousel__content,
+.header-carousel .carousel-item-4 .carousel__content {
   top: 50%;
   left: 40%;
   transform: translateY(-50%);
@@ -270,6 +305,10 @@ header {
   padding: 100px 200px;
 }
 
+.video__content h5 {
+  color: var(--red);
+}
+
 .video__content .video__thumbnail {
   position: relative;
   width: 100%;
@@ -314,4 +353,157 @@ header {
     transform: translate(-50%, -50%) scale(3);
     transform-origin: center center;
   }
+}
+
+.testimonials__content {
+  padding: 100px 150px;
+  background-color: var(--light-purple);
+}
+
+.testimonials__content h5 {
+  color: var(--red);
+}
+
+.testimonials__content .carousel__content {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonials__content blockquote q::before {
+  font-size: 50px;
+  color: var(--primary-color);
+  line-height: 0.8;
+  padding-top: 8px;
+  font-weight: 600;
+  display: inline-block;
+  font-family: "Merriweather", serif;
+}
+
+.testimonials__content .testimonials__person {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testimonials__content .testimonials__person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonials__content .owl-dots {
+  margin-top: 50px;
+  display: flex !important;
+  justify-content: center;
+}
+
+.testimonials__content .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--light-grey);
+  opacity: 1;
+  margin-right: 10px;
+}
+
+.testimonials__content .owl-dots .owl-dot:hover {
+  background-color: var(--primary-color);
+  width: 30px;
+  height: 10px;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.testimonials__content .owl-dots .owl-dot.active {
+  background-color: var(--primary-color);
+  width: 30px;
+  height: 10px;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.subscribe__content {
+  padding: 100px 150px;
+  max-width: 900px;
+}
+
+.subscribe__content form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe__content form input[type="email"] {
+  width: 70%;
+  height: 60px;
+  border: 1px solid var(--light-grey);
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.subscribe__content form input[type="button"] {
+  width: 30%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white);
+}
+
+.footer__content {
+  padding: 100px 150px;
+  background-color: var(--black);
+  color: var(--grey);
+}
+
+.footer__content ul {
+  list-style-type: none;
+}
+
+.footer__content .row ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__content .row .sns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer__bottom {
+  background-color: var(--black);
+  color: var(--grey);
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey);
+}
+
+.footer__bottom span {
+  color: var(--red);
+}
+
+.footer__bottom .back-to-top-btn {
+  position: absolute;
+  top: -70px;
+  right: 30px;
+  padding: 20px 27px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--white);
 }

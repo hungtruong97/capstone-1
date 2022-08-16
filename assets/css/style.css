@@ -209,7 +209,7 @@ header {
 }
 
 .features__content {
-  padding: 100px 150px;
+  /* padding: 100px 150px; */
   margin: 0 auto;
   background-color: var(--light-purple);
 }
@@ -234,10 +234,10 @@ header {
 .features__content .card__content h3 {
   margin-bottom: 20px;
 }
-
+/* 
 .reason__content {
   padding: 100px 150px;
-}
+} */
 
 .reason__content .img img {
   width: 100%;
@@ -256,12 +256,12 @@ header {
 }
 
 .number__content {
-  padding: 70px 150px;
+  /* padding: 70px 150px; */
   background-color: var(--primary-color);
 }
 
 .plans__content {
-  padding: 100px 150px;
+  /* padding: 100px 150px; */
   background-color: var(--purple);
 }
 

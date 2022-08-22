@@ -735,3 +735,35 @@ header {
   border-radius: 10px;
   display: block;
 }
+
+/* Blog Posts */
+
+.blog-posts {
+  background-color: var(--light-purple);
+}
+
+.blog-posts .blog-posts__content img {
+  width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  transition: all 0.25s;
+}
+
+.blog-posts .blog-posts__content h5 {
+  color: var(--red);
+}
+
+.blog-posts .blog-posts__content .item {
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 5%;
+  box-shadow: none;
+  transition: all 0.25s;
+}
+
+.blog-posts .blog-posts__content .blog__card:hover img,
+.blog-posts .blog-posts__content .blog__card:hover .item {
+  transform: translateY(-20px);
+  box-shadow: 0px 5px 5px rgba(147, 107, 232, 0.1);
+  transition: all 0.25s ease-in;
+}

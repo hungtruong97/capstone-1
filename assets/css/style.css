@@ -498,6 +498,7 @@ header {
   background-image: url(/assets/img/Homepage/banner4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   margin-top: 55px;
   position: relative;

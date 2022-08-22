@@ -683,3 +683,55 @@ header {
     left: 40%;
   }
 }
+
+/* Contact Page  */
+.contact__content h5 {
+  color: var(--red);
+}
+
+.contact__content input {
+  height: 60px;
+  border-radius: 5px;
+  background-color: var(--light-purple);
+  border: 1px solid var(--light-grey);
+  padding-left: 20px;
+}
+
+.contact__content textarea {
+  height: 120px;
+  border-radius: 5px;
+  background-color: var(--light-purple);
+  border: 1px solid var(--light-grey);
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.contact__content .info i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.contact__content a {
+  text-decoration: none;
+}
+
+.contact__content a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.contact__content button {
+  width: 200px;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+}
+
+.map-iframe iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  display: block;
+}

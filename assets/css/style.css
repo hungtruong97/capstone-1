@@ -21,20 +21,19 @@ html,
 body {
   font-family: "Roboto", sans-serif !important;
   background-color: var(--white);
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 40px;
   left: 0;
   width: 100%;
   z-index: 10;
-  position: fixed;
 }
 
 .header__content {
-  padding-left: 150px;
-  padding-right: 150px;
   background-color: white;
 }
 
@@ -64,39 +63,36 @@ header {
   transition: all 0.5s;
 }
 
-.header-carousel .carousel-item {
+.header-carousel .item {
+  z-index: 1;
+}
+
+.header-carousel .carousel__text {
   position: relative;
+  z-index: 2;
 }
 
-.header-carousel .carousel-item .carousel__content {
-  position: absolute;
-}
-
-.header-carousel .carousel-item .carousel__content h1 {
-  font-size: 66px;
-}
-
-.header-carousel .carousel-item .carousel__content .btn {
+.header-carousel .item .btn {
   border-radius: 10px;
   padding: 15px 50px;
   background-color: var(--white);
   color: var(--primary-color);
 }
 
-.header-carousel .carousel-item .carousel__content .btn-outline-primary {
+.header-carousel .item .btn-outline-primary {
   border-color: var(--white);
   color: var(--white);
   background-color: transparent;
   transition: all 0.5s;
 }
 
-.header-carousel .carousel-item .carousel__content .btn-outline-primary:hover {
+.header-carousel .item .btn-outline-primary:hover {
   color: var(--primary-color);
   background-color: var(--white);
   transition: all 0.5s;
 }
 
-.header-carousel .carousel-item::before {
+.header-carousel .item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -112,7 +108,7 @@ header {
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  height: 95vh;
+  background-position: center;
 }
 
 .header-carousel .carousel-item-2 {
@@ -120,7 +116,7 @@ header {
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  height: 95vh;
+  background-position: center;
 }
 
 .header-carousel .carousel-item-3 {
@@ -128,42 +124,28 @@ header {
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  height: 95vh;
+  background-position: center;
 }
 
 .header-carousel .carousel-item-4 {
   background-image: url(/assets/img/Homepage/banner4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
-  height: 95vh;
 }
 
-.header-carousel .carousel-item-1 .carousel__content,
-.header-carousel .carousel-item-3 .carousel__content {
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-}
-
-.header-carousel .carousel-item-2 .carousel__content,
-.header-carousel .carousel-item-4 .carousel__content {
-  top: 50%;
-  left: 40%;
-  transform: translateY(-50%);
-}
-
-.carousel-indicators [data-bs-target] {
+.header-carousel .owl-dots .owl-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   border: none;
-  background-color: var(--white);
+  background-color: var(--light-grey);
   opacity: 1;
   margin-right: 10px;
 }
 
-.carousel-indicators [data-bs-target]:hover {
+.header-carousel .owl-dots .owl-dot:hover {
   background-color: var(--primary-color);
   width: 30px;
   height: 10px;
@@ -171,7 +153,7 @@ header {
   opacity: 1;
 }
 
-.carousel-indicators .active {
+.header-carousel .owl-dots .owl-dot.active {
   background-color: var(--primary-color);
   width: 30px;
   height: 10px;
@@ -181,7 +163,6 @@ header {
 
 .about__content {
   max-width: 600px;
-  margin: 100px auto;
 }
 
 .about__content h5 {
@@ -262,7 +243,6 @@ header {
 }
 
 .plans__content {
-  /* padding: 100px 150px; */
   background-color: var(--purple);
 }
 
@@ -455,8 +435,11 @@ header {
   color: var(--white);
 }
 
+.footer {
+  background-color: var(--black);
+}
+
 .footer__content {
-  padding: 100px 150px;
   background-color: var(--black);
   color: var(--grey);
 }
@@ -557,6 +540,7 @@ header {
   background-image: url(/assets/img/Homepage/banner2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   z-index: 1;
 }

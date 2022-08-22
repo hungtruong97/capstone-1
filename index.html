@@ -22,30 +22,30 @@
 <body>
     <header class="header">
         <div class="header__content">
-            <nav class="navbar navbar-expand-lg bg-white">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light">
+                <div class="container-fluid px-5">
                     <a class="navbar-brand text-success fs-1 fw-bold col-2-2" href="#">Pooch Care</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto text-center">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active text-dark" aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ms-3" href="/about.html">About</a>
+                                <a class="nav-link text-dark ms-lg-3" href="/about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ms-3" href="#">Services</a>
+                                <a class="nav-link text-dark ms-lg-3" href="#">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ms-3" href="#">Gallery</a>
+                                <a class="nav-link text-dark ms-lg-3" href="#">Gallery</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle ms-3" href="#" role="button"
+                                <a class="nav-link dropdown-toggle text-dark ms-lg-3" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Blog
                                 </a>
@@ -56,7 +56,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ms-3">Contact</a>
+                                <a class="nav-link text-dark ms-lg-3">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -68,49 +68,37 @@
     <main>
         <!-- Carousel -->
         <section class="header-carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
+            <div class="carousel__content owl-carousel" id="owl-carousel-1">
+                <div class="item carousel-item-1 active py-5">
+                    <div class="carousel__text p-5">
+                        <h1 class="text-white fw-bolder mb-2 ,t-5">Quality Things For <br> Loving Pets</h1>
+                        <h6 class="text-white mb-5">Keeps Your Pet Smiling</h6>
+                        <a class="btn me-2 mb-5" href="#">Read More</a>
+                        <a class="btn btn-outline-primary mb-5">Contact Us</a>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item carousel-item-1 active">
-                        <div class="carousel__content g-col-4">
-                            <h1 class="text-white fw-bolder mb-2">Quality Things For <br> Loving Pets</h1>
-                            <h6 class="text-white mb-5">Keeps Your Pet Smiling</h6>
-                            <a class="btn me-2" href="#">Read More</a>
-                            <a class="btn btn-outline-primary">Contact Us</a>
-                        </div>
+                <div class="item carousel-item-2 py-5">
+                    <div class="carousel__text p-5">
+                        <h1 class="text-white fw-bolder mb-2 mt-5">Delivering Happiness <br> For Pets</h1>
+                        <h6 class="text-white mb-5">For The Love Of Pets</h6>
+                        <a class="btn me-2 mb-5" href="#">Read More</a>
+                        <a class="btn btn-outline-primary mb-5">Contact Us</a>
                     </div>
-                    <div class="carousel-item carousel-item-2">
-                        <div class="carousel__content g-col-4">
-                            <h1 class="text-white fw-bolder mb-2">Delivering Happiness <br> For Pets</h1>
-                            <h6 class="text-white mb-5">For The Love Of Pets</h6>
-                            <a class="btn me-2" href="#">Read More</a>
-                            <a class="btn btn-outline-primary">Contact Us</a>
-                        </div>
+                </div>
+                <div class="item carousel-item-3 py-5">
+                    <div class="carousel__text p-5">
+                        <h1 class="text-white fw-bolder mb-2 mt-5">Quality Things For <br> Loving Pets</h1>
+                        <h6 class="text-white mb-5">For The Love Of Pets</h6>
+                        <a class="btn me-2 mb-5" href="#">Read More</a>
+                        <a class="btn btn-outline-primary mb-5">Contact Us</a>
                     </div>
-                    <div class="carousel-item carousel-item-3">
-                        <div class="carousel__content g-col-4">
-                            <h1 class="text-white fw-bolder mb-2">Quality Things For <br> Loving Pets</h1>
-                            <h6 class="text-white mb-5">For The Love Of Pets</h6>
-                            <a class="btn me-2" href="#">Read More</a>
-                            <a class="btn btn-outline-primary">Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item carousel-item-4">
-                        <div class="carousel__content g-col-4">
-                            <h1 class="text-white fw-bolder mb-2">Delivering Happiness <br> For Pets</h1>
-                            <h6 class="text-white mb-5">We Help Your Projects</h6>
-                            <a class="btn me-2" href="#">Read More</a>
-                            <a class="btn btn-outline-primary">Contact Us</a>
-                        </div>
+                </div>
+                <div class="item carousel-item-4 py-5">
+                    <div class="carousel__text p-5">
+                        <h1 class="text-white fw-bolder mb-2 mt-5">Delivering Happiness <br> For Pets</h1>
+                        <h6 class="text-white mb-5">We Help Your Projects</h6>
+                        <a class="btn me-2 mb-5" href="#">Read More</a>
+                        <a class="btn btn-outline-primary mb-5">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -118,7 +106,7 @@
 
         <!-- About -->
         <section class="about">
-            <div class="about__content text-center">
+            <div class="about__content text-center container-fluid py-5 px-3">
                 <h5>ABOUT US</h5>
                 <h1>We Love Your Pets Like They Are Our Own</h1>
                 <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -132,11 +120,10 @@
                 </p>
                 <a class="secondary-btn fs-6 fw-bold text-decoration-none" href="#">Read More</a>
             </div>
-            </div>
         </section>
 
         <section class="features">
-            <div class="features__content py-5 container">
+            <div class="features__content py-5 container-fluid px-3">
                 <div class="row g-4">
                     <div class="col-sm col-lg-4">
                         <div class="card__content">
@@ -210,7 +197,7 @@
 
         <!-- Why Choose Us -->
         <section class="reason">
-            <div class="reason__content container py-5 px-3">
+            <div class="reason__content container-fluid py-5 px-3">
                 <div class="row align-items-center g-4">
                     <div class="col-sm img">
                         <img src="/assets/img/Homepage/ab.jpeg" alt="">
@@ -253,7 +240,7 @@
 
         <!-- Number -->
         <section class="number">
-            <div class="number__content container py-5 px-3">
+            <div class="number__content container-fluid py-5 px-3">
                 <div class="row text-center g-4">
                     <div class="col-6 col-lg-3">
                         <h1 class="text-white">730</h1>
@@ -277,7 +264,7 @@
 
         <!-- Plans -->
         <section class="plans">
-            <div class="plans__content text-center container py-5 px-3">
+            <div class="plans__content text-center container-fluid py-5 px-3">
                 <h5>Our Plans</h5>
                 <h1>Affordable Packages</h1>
                 <div class="row mt-5 align-items-center justify-content-center g-4 g-sm-0 px-3">
@@ -367,11 +354,12 @@
                 </div>
             </div>
         </section>
+
         <section class="testimonials">
             <div class="testimonials__content">
                 <h5 class="text-center">TESTIMONIALS</h5>
                 <h1 class="text-center mb-5">Happy Clients & Feedbacks</h1>
-                <div class="owl-carousel row">
+                <div class="owl-carousel row" id="owl-carousel-2">
                     <div class="carousel__content">
                         <blockquote><q class="fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                 elit. Velit beatae
@@ -453,6 +441,7 @@
                 </div>
             </div>
         </section>
+
         <section class="subscribe d-flex justify-content-center">
             <div class="subscribe__content text-center">
                 <h1>Stay Updated!</h1>
@@ -469,9 +458,9 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__content">
-            <div class="row">
-                <div class="col-6">
+        <div class="footer__content container py-5">
+            <div class="row g-3">
+                <div class="col-12 col-lg-6">
                     <ul>
                         <li class="mb-5">
                             <h5 class="fw-bold text-white">Contact information</h5>
@@ -490,7 +479,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <ul>
                         <li class="mb-5">
                             <h5 class="fw-bold text-white">Company</h5>
@@ -501,7 +490,7 @@
                         <li>Pricing</li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <ul>
                         <li class="mb-5">
                             <h5 class="fw-bold text-white">Quick Links</h5>
@@ -512,7 +501,7 @@
                         <li>Site Feedback</li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-md-4 col-lg-2">
                     <ul>
                         <li class="mb-5">
                             <h5 class="fw-bold text-white">Support</h5>
@@ -544,8 +533,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>$(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+    <script>
+        $(document).ready(function () {
+            owlCarousel1 = $("#owl-carousel-1")
+            owlCarousel2 = $("#owl-carousel-2")
+
+            owlCarousel1.owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                slideBy: 1,
+            })
+
+            owlCarousel2.owlCarousel({
                 items: 2,
                 loop: true,
                 autoplay: true,
@@ -554,7 +556,8 @@
                 autoplayHoverPause: true,
                 slideBy: 2,
             });
-        });</script>
+        });
+    </script>
 </body>
 
 </html>

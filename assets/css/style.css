@@ -633,3 +633,53 @@ header {
 .services-page__services .services__content .services__card h5 {
   color: var(--red);
 }
+
+/* Gallery Page */
+.gallery__content figure {
+  position: relative;
+}
+
+.gallery .gallery__content img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.gallery .gallery__content figure::before {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-25deg);
+  opacity: 0;
+}
+
+.gallery .gallery__content figure:hover::before {
+  left: 40%;
+  animation: slide 0.5s;
+}
+
+.gallery .gallery__content h5 {
+  color: var(--red);
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    left: -20%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 40%;
+  }
+}

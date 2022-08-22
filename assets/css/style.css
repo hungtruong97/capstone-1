@@ -606,3 +606,30 @@ header {
   background-color: #f2f1fd;
   border-radius: 5px;
 }
+
+/* Services Page */
+.services-page__services .services__content .services__card .row img {
+  border-radius: 10%;
+}
+
+.services-page__services .services__content .services__card {
+  position: relative;
+}
+
+.services-page__services .services__content .services__card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-grey);
+}
+
+.services-page__services .services__content .services__card:last-child::after {
+  display: none;
+}
+
+.services-page__services .services__content .services__card h5 {
+  color: var(--red);
+}
